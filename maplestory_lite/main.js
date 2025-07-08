@@ -23,8 +23,10 @@ let cursors;
 const game = new Phaser.Game(config);
 
 function preload () {
-    this.load.image('bg', 'https://i.imgur.com/FY8YyqH.png'); // tło fantasy
-    this.load.spritesheet('hero', 'https://i.imgur.com/8k3fLOK.png', { frameWidth: 32, frameHeight: 48 });
+    this.load.image('bg', 'https://raw.githubusercontent.com/gpt-dev-assets/maple-assets/main/bg_forest.png');
+    this.load.spritesheet('hero', 'https://raw.githubusercontent.com/gpt-dev-assets/maple-assets/main/hero.png', {
+        frameWidth: 32, frameHeight: 48
+    });
 }
 
 function create () {
